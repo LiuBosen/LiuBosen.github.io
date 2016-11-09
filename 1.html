@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.header{
+			width: 1000px;
+			height: 160px;
+			margin: 0 auto;
+			overflow: hidden;
+		}
+		.banner{
+			width: 1000px;
+			height: 470px;
+			background-image: url(images/背景.jpg);
+			margin: 0 auto;
+			overflow: hidden;
+		}
+		.banner h1{
+			color: #0a3b7e;
+			font-size: 40px;
+			margin-left: 340px;
+			margin-top: 155px;
+			overflow: hidden;
+		}
+		#next{
+			float: right;
+			cursor: pointer;
+			margin-top: 30px;
+		}
+		#lx{
+			margin-left: 340px;
+			margin-top: 30px;
+			cursor: pointer;
+		}
+		#pre{
+			cursor: pointer;
+			line-height: 470px;
+		}
+		.container{
+			width: 1000px;
+			height: 540px;
+			margin: 0 auto;
+			overflow: hidden;
+		}
+		.footer{
+			width: 1000px;
+			height: 325px;
+			margin: 0 auto;
+			background-color: #e5e5e5;
+			overflow: hidden;
+		}
+		.top{
+			height: 100px;
+			background-color: white;
+		}
+		.nav{
+			height: 60px;
+			background-color: #313131;
+		}
+		.dh{
+			width: 120px;
+			height: 60px;
+			background-color: #313131;
+			border: 1px solid #4d4d4d;
+			list-style: none;
+			text-align: center;
+			line-height: 60px;
+			float: left;
+		}
+		.dh a{
+			text-decoration: none;
+			color: #ededed;
+		}
+		.dh2{
+			width: 132px;
+			height: 60px;
+			background-color: #313131;
+			border: 1px solid #4d4d4d;
+			list-style: none;
+			text-align: center;
+			line-height: 60px;
+			float: left;
+		}
+		.dh2 a{
+			text-decoration: none;
+			color: #ededed;
+		}
+		.dh3{
+			width: 132px;
+			height: 60px;
+			background-color: #313131;
+			border: 1px solid #4d4d4d;
+			list-style: none;
+			text-align: center;
+			line-height: 60px;
+			float: left;
+		}
+		.dh3 a{
+			text-decoration: none;
+			color: #ededed;
+		}
+		.container-top{
+			height: 240px;
+		}
+		.container-bottom{
+			height: 300px;
+			background-color: #ffffff;
+			overflow: hidden;
+		}
+		.container-bottom h3{
+			margin-left: 20px;
+			margin-top: 25px;
+		}
+		.bylt{
+			margin-top: 17px;
+			margin-left: 20px;
+		}
+		.bylt1{
+			width: 222px;
+			height: 190px;
+			float: left;
+		}
+		.bylt1 p{
+			display: block;
+			margin-top: 20px;
+			color: #535353;
+			font-size: 11px;
+		}
+		.bylt2{
+			width: 211px;
+			height: 190px;
+			float: left;
+			margin-left: 25px;
+		}
+		.bylt2 p{
+			display: block;
+			margin-top: 20px;
+			color: #535353;
+			font-size: 11px;
+		}
+		.bylt3{
+			width: 211px;
+			height: 190px;
+			float: left;
+			margin-left: 40px;
+		}
+		.bylt3 p{
+			display: block;
+			margin-top: 20px;
+			color: #535353;
+			font-size: 11px;
+		}
+		.bylt4{
+			width: 211px;
+			height: 190px;
+			float: left;
+			margin-left: 40px;
+		}
+		.bylt4 p{
+			display: block;
+			margin-top: 20px;
+			color: #535353;
+			font-size: 11px;
+		}
+		.footer-top{
+			height: 250px;
+			background-color: #e5e5e5;
+		}
+		.footer-bottom{
+			height: 75px;
+			background-color: #ffffff;
+			overflow: hidden;
+		}
+		.dao{
+			margin-top: 25px;
+			margin-left: 24px;
+			float: left;
+		}
+		.dao a{
+			text-decoration: none;
+			color: #5a5a5a;
+			font-size: 10px;
+		}
+		.dizhi{
+			margin-left: 50px;
+			color: #828282;
+			font-size: 15px;
+			float: left;
+		}
+		.dizhi2{
+			margin-top: 25px;
+		}
+		.fenxiang{
+			margin-left: 70px;
+		}
+		.logo{
+			width: 200px;
+			height: 20px;
+			float: left;
+			margin-left: 20px;
+			margin-top: 40px;
+		}
+		.search{
+			width: 180px;
+			height: 20px;
+			float: right;
+			margin-right: 20px;
+			margin-top: 40px;
+			border: 1px solid #e5e5e5;
+			background-color: #f1f1f1;
+		}
+		.search span{
+			color: #989898;
+			font-size: 12px;
+			margin-left: 15px;
+		}
+		.search img{
+			margin-left: 84px;
+			margin-top: 3px;
+		}
+		.k1{
+			width: 500px;
+			height: 240px;
+			background-color: #ffffff;
+			float: left;
+		}
+		.k1 h3{
+			margin-top: 36px;
+			margin-left: 22px;
+			font-size: 17px;
+		}
+		.k1-list{
+			width: 450px;
+			height: 108px;
+			margin-left: 35px;
+			margin-top: 30px;
+		}
+		.k1-list li{
+			width: 450px;
+		}
+		.k1-list li span{
+			font-size: 12px;
+			float: right;
+			color: #515151;
+		}
+		.k1-list a{
+			font-size: 12px;
+			text-decoration: none;
+			color: #515151;
+		}
+		.k2{
+			width: 240px;
+			height: 240px;
+			background-color: #f1f1f1;
+			float: left;
+		}
+		.k2 h3{
+			color: #000;
+			font-size: 17px;
+			margin-left: 25px;
+			margin-top: 35px;
+		}
+		.k2 p{
+			color: #969696;
+			font-size: 12px;
+			margin-left: 25px;
+			margin-top: 20px;
+		}
+		.k2 h4{
+			color: #5a5a5a;
+			font-size: 14px;
+			margin-left: 25px;
+			margin-top: 40px;
+		}
+		.k3{
+			width: 260px;
+			height: 240px;
+			background-color: #ffffff;
+			float: left;
+		}
+		.k3 h3{
+			color: #000;
+			font-size: 17px;
+			margin-left: 25px;
+			margin-top: 35px;
+		}
+		.k3 p{
+			color: #5a5a5a;
+			font-size: 12px;
+			margin-left: 25px;
+			margin-top: 30px;
+		}
+		.k3 img{
+			margin-left: 25px;
+			margin-top: 12px;
+		}
+		.s1{
+			width: 450px;
+			height: 160px;
+			float: left;
+			margin-left: 30px;
+			margin-top: 30px;
+		}
+		.s1 h3{
+			color: #5a5a5a;
+			font-size: 15px;
+			margin-left: 33px;
+			margin-top: 30px;
+			border-bottom: 1px solid #c1c1c1;
+		}
+		.b1{
+			margin-left: 26px;
+			margin-top: 21px;
+			color: #737373;
+			font-size: 12px;
+			float: left;
+			list-style-image: url(images/jian.gif);
+		}
+		.b2{
+			color: #737373;
+			font-size: 12px;
+			margin-left: 38px;
+			margin-top: 21px;
+			float: left;
+			list-style-image: url(images/jian.gif);
+		}
+		.b3{
+			color: #737373;
+			font-size: 12px;
+			margin-left: 55px;
+			margin-top: 21px;
+			float: left;
+			list-style-image: url(images/jian.gif);
+		}
+		.s2{
+			width: 150px;
+			height: 120px;
+			float: left;
+			margin-left: 60px;
+			margin-top: 30px;
+		}
+		.s2 h3{
+			font-size: 15px;
+			color: #5a5a5a;
+			margin-top: 30px;
+			border-bottom: 1px solid #c1c1c1;
+		}
+		.b4{
+			font-size: 12px;
+			color: #737373;
+			margin-top: 20px;
+			margin-left: 20px;
+			list-style-image: url(images/jian.gif);
+		}
+		.s3{
+			width: 230px;
+			height: 200px;
+			float: left;
+			margin-left: 60px;
+			margin-top: 30px;
+		}
+		.s3 h3{
+			color: #656565;
+			font-size: 15px;
+			border-bottom: 1px solid #c1c1c1;
+			margin-top: 25px;
+		}
+		.tu{
+			margin-top: 10px;
+			margin-left: 33px;
+		}
+
+
+	</style>
+</head>
+<body>
+	<div class="header">
+		<div class="top">
+			<div class="logo">
+				<img src="images/logo.jpg" alt="">
+			</div>
+			<div class="search">
+				<span>SEARCH...</span>
+				<img src="images/search.gif" alt="">
+			</div>
+		</div>
+		<div class="nav">
+			<ul>
+				<li class="dh2"><a href="#">博易主页</a></li>
+				<li class="dh"><a href="#">公司简介</a></li>
+				<li class="dh"><a href="#">博易课堂</a></li>
+				<li class="dh"><a href="#">博易纪要</a></li>
+				<li class="dh"><a href="#">技术博客</a></li>
+				<li class="dh"><a href="#">博易英雄榜</a></li>
+				<li class="dh"><a href="#">公司位置</a></li>
+				<li class="dh3"><a href="#">联系我们</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="banner">
+		<h1>让博学变得更容易</h1>
+		<img src="images/pre.png" alt="" id="pre">
+		<img src="images/lianxi.gif" alt="" id="lx">
+		<img src="images/next.png" alt="" id="next"> 
+	</div>
+	<div class="container">
+		<div class="container-top">
+			<div class="k1">
+				<h3>博易新闻</h3>
+				<ul class="k1-list">
+					<li>
+						<a href="#">秦皇岛博易科技科技开发有限公司</a>
+						<span>2016-9-20</span>
+					</li>
+					<li>
+						<a href="#">秦皇岛博易科技免费课正式开课</a>
+						<span>2016-9-20</span>
+					</li>
+					<li>
+						<a href="#">秦皇岛博易科技董家口之行</a>
+						<span>2016-9-20</span>
+					</li>
+					<li>
+						<a href="#">秦皇岛博易科技前端开发课堂正式上线</a>
+						<span>2016-9-20</span>
+					</li>
+					<li>
+						<a href="#">秦皇岛博易科技与学员共度中秋佳节</a>
+						<span>2016-9-20</span>
+					</li>
+				</ul>
+			</div>
+			<div class="k2">
+				<h3>公司简介</h3>
+				<h4>公司的宗旨</h4>
+				<p>搭建一个免费的学习平台</br>让博学更容易</p>
+			</div>
+			<div class="k3">
+				<h3>人才信息</h3>
+				<p>培养一流前端工程师</br>实现企业与人才的完美融合</p>
+				<img src="images/hua.jpg" alt="">
+			</div>
+		</div>
+		<div class="container-bottom">
+			<h3>博易论坛</h3>
+			<div class="bylt">
+				<div class="bylt1">
+					<img src="images/lun1.jpg" alt="">
+					<p>如何成为一名前端工程师<br>作为刚接触前端不久的童鞋，大家都会...</p>
+				</div>
+				<div class="bylt2">
+					<img src="images/lun2.jpg" alt="">
+					<p>前端独立技术博客推荐<br>从起初觉得搞技术拥有独立博客是标配</p>
+				</div>
+				<div class="bylt3">
+					<img src="images/lun3.jpg" alt="">
+					<p>测试代码时你会犯得11个错误<br>如果你不确定要不要编写测试或者...</p>
+				</div>
+				<div class="bylt4">
+					<img src="images/lun4.jpg" alt="">
+					<p>13年的bug调试经验总结<br>总结最重要的经验教训</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="footer-top">
+			<div class="s1">
+				<h3>前端课程知识点</h3>
+				<div>
+					<ul class="b1">
+						<li>html+css基础知识</li>
+						<li>切图排版与布局</li>
+						<li>jQuery基础</li>
+						<li>Javasscript程序设计</li>
+						<li>BOM与DOM操作</li>
+					</ul>
+					<ul class="b2">
+						<li>node.js后台开发</li>
+						<li>Ajax</li>
+						<li>MongoDB</li>
+						<li>git/github/svn</li>
+					</ul>
+					<ul class="b3">
+						<li>html5+css3开发</li>
+						<li>响应式布局开发</li>
+						<li>Angular2/react</li>
+						<li>swiper.js/zepto.js</li>
+					</ul>
+				</div>
+			</div>
+			<div class="s2">
+				<h3>三个阶段</h3>
+				<ul class="b4">
+					<li>第一阶段（免费）</li>
+					<li>第二阶段（提高）</li>
+					<li>第三阶段（进阶）</li>
+				</ul>
+			</div>
+			<div class="s3">
+				<h3>学员分布</h3>
+				<img src="images/地图.jpg" alt="" class="tu">
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<div class="dao">
+				<a href="#">网站地图</a>
+				|
+				<a href="#">联系我们</a>
+				|
+				<a href="#">关注博易</a>
+				|
+				<a href="#">报名系统入口</a>
+			</div>
+			<div class="dizhi2">
+				<span class="dizhi">COPYRIGHT@秦皇岛博易科技开发有限公司 翼ICP备0600521号</span>
+			</div>
+			<div>
+				<img src="images/地址.gif" alt="" class="fenxiang">
+			</div>
+		</div>
+	</div>
+</body>
+</html>
